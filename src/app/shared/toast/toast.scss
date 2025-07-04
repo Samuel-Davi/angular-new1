@@ -1,0 +1,21 @@
+.custom-toast {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-weight: bold;
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+  color: #fff;
+
+  &.success { background: #27ae60; }
+  &.info    { background: #2980b9; }
+  &.error   { background: #e74c3c; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
